@@ -55,6 +55,7 @@
     "bcryptjs": "^2.4.3",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.11",
+    "jszip": "^3.10.1",
     "lodash": "^4.17.21",
     "moment": "^2.30.1",
     "omit.js": "^2.0.2",

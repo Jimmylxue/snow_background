@@ -88,6 +88,15 @@ export function useGenerateLink(options?: UseMutationOptions<string, ClientError
   return useMutation<string, ClientError, any>((data) => post('/address/generate', data), options);
 }
 
+export function useGenerateLinkMore(
+  options?: UseMutationOptions<string, ClientError, { count: number }>,
+) {
+  return useMutation<string, ClientError, { count: number }>(
+    (data) => post('/address/generate', data),
+    options,
+  );
+}
+
 export function useDownloadFile(
   options?: UseMutationOptions<string, ClientError, TAddressListParams>,
 ) {
